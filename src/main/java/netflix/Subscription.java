@@ -4,13 +4,11 @@ import payment.IPaymentGateway;
 import service.BillingService;
 
 public class Subscription {
-    int id;
     SubscriptionPlan subscriptionPlan;
     BillingService billingService;
     IPaymentGateway paymentGateway;
 
-    public Subscription(int id, SubscriptionPlan subscriptionPlan) {
-        this.id = id;
+    public Subscription(SubscriptionPlan subscriptionPlan) {
         this.subscriptionPlan = subscriptionPlan;
     }
 
